@@ -1,0 +1,24 @@
+<div>
+
+
+  <label>First Name</label>
+  <input type="text" disabled [(ngModel)]="firstname" >
+
+
+  <label>Last Name</label>
+  <input type="text" disabled [(ngModel)]="data.lastname" >
+
+  <label>Address</label>
+  <input type="text" [(ngModel)]="data.address">
+
+  <label>City</label>
+  <input type="text" [(ngModel)]="data.city" >
+
+  <label>State</label>
+  <input type="text" [(ngModel)]="data.state" >
+
+  <button (click)="update()">Submit</button>
+  <button (click)="delete()">Delete</button>
+  <button (click)="cancel()">Cancel</button>
+
+</div>
