@@ -23,16 +23,15 @@ export class EditComponent implements OnInit {
       this.firstname = params.get('firstname');
       console.log(this.firstname);
       this.service.getByFirstname(this.firstname).subscribe(data=> {
-        this.data=data;
-        console.log(this.data)
-      
+        console.log(data);
+        this.firstname=data[0].firstname;
+        this.lastname=data[0].lastname;
+        this.address=data[0].address;
+        this.city=data[0].city;
+        this.state=data[0].state;
       
       });
-        this.firstname=this.data.firstname;
-        this.lastname=this.data.lastname;
-        this.address=this.data.address;
-        this.city=this.data.city;
-        this.state=this.data.state;
+        
     });
     
   }
