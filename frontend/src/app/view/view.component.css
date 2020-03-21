@@ -39,3 +39,10 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+.search{
+    float: right;
+}
+
+.button{    
+    float: right;
+}
